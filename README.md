@@ -23,3 +23,12 @@ requestQueue.add(request);
 
 ## Including in a Project
 
+Add the following to your gradle.properties file:
+
+```
+repositories {
+    mavenCentral()
+}
+
+compile 'com.github.hardillb.MultiPartVolley:master:+'
+```
