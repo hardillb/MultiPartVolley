@@ -33,37 +33,37 @@ dependencies {
     compile 'com.android.volley:volley:1.0.0'
 }
 
-def libraryGroupId = 'uk.me.hardill.volley'
-def libraryArtifactId = 'MultiPartVolley'
-def libraryVersion = '0.0.2'
-
-publishing {
-    publications {
-        aar(MavenPublication) {
-            groupId libraryGroupId
-            version libraryVersion
-            artifactId libraryArtifactId
-
-            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
-        }
-    }
-}
-
-artifactory {
-    contextUrl = 'http://smeghead.hursley.ibm.com:8081/artifactory'
-    publish {
-        repository {
-            repoKey = 'gradle-release-local'
-
-            username = artifactory_username
-            password = artifactory_password
-        }
-        defaults {
-            publications('aar')
-            publishArtifacts = true
-
-            properties = ['qa.level': 'basic', 'q.os': 'android', 'dev.team': 'core']
-            publishPom = true
-        }
-    }
-}
+//def libraryGroupId = 'uk.me.hardill.volley'
+//def libraryArtifactId = 'MultiPartVolley'
+//def libraryVersion = '0.0.2'
+//
+//publishing {
+//    publications {
+//        aar(MavenPublication) {
+//            groupId libraryGroupId
+//            version libraryVersion
+//            artifactId libraryArtifactId
+//
+//            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+//        }
+//    }
+//}
+//
+//artifactory {
+//    contextUrl = 'http://smeghead.hursley.ibm.com:8081/artifactory'
+//    publish {
+//        repository {
+//            repoKey = 'gradle-release-local'
+//
+//            username = artifactory_username
+//            password = artifactory_password
+//        }
+//        defaults {
+//            publications('aar')
+//            publishArtifacts = true
+//
+//            properties = ['qa.level': 'basic', 'q.os': 'android', 'dev.team': 'core']
+//            publishPom = true
+//        }
+//    }
+//}
