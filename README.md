@@ -23,12 +23,12 @@ requestQueue.add(request);
 
 ## Including in a Project
 
-Add the following to your gradle.properties file:
+Add the following to your build.gradle file:
 
 ```
 repositories {
     maven { url 'https://jitpack.io' }
 }
 
-compile 'com.github.hardillb:MultiPartVolley:0.0.1'
+compile 'com.github.hardillb:MultiPartVolley:0.0.3'
 ```
