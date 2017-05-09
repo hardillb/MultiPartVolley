@@ -27,8 +27,8 @@ Add the following to your gradle.properties file:
 
 ```
 repositories {
-    mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
-compile 'com.github.hardillb.MultiPartVolley:master:+'
+compile 'com.github.hardillb:MultiPartVolley:0.0.1'
 ```
