@@ -30,5 +30,5 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
-compile 'com.github.hardillb:MultiPartVolley:0.0.3'
+compile 'com.github.hardillb:MultiPartVolley:0.0.4'
 ```
